@@ -1,0 +1,10 @@
+RewriteEngine on
+
+RewriteRule ^$ index.html
+RewriteRule ^projects$ projects.html
+RewriteRule ^about$ about.html
+RewriteRule ^contact$ contact.html
+
+
+# Pattern
+# RewriteRule ^$ .html
