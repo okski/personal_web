@@ -15,7 +15,6 @@ time, mark, audio, video {
     padding: 0;
     border: 0;
     font: inherit;
-    list-style-type: none;
 }
 
 body{
@@ -87,6 +86,51 @@ main p {
     margin: 0.5em 0 0 1.5em;
 }
 
-main h3 + ul {
+main h3 + ul, main h2 + ul {
     margin-left: 3em;
+}
+
+.lsNone {
+    list-style: none;
+}
+
+li.liFirst {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+table ul {
+    list-style-type: "\2013";
+}
+
+table li {
+    padding-left: 0.5em;
+    margin-left: 0.5em;
+}
+
+td {
+    padding: 0.5em 0 0 3em;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+li {
+    margin-top: 0.25em;
+}
+
+.mail, .phoneNumber, .address {
+    text-decoration: none;
+    color: black;
+}
+
+address {
+    margin-left: 2em;
+}
+
+address a {
+    display: inline-block;
+    margin-top: 0.5em;
 }
