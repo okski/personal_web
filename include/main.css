@@ -1,0 +1,141 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: black;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bolder;
+    margin: 0.25em 0 0 0.25em
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0.25em 0 0 0.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0.25em 0 0 1em;
+}
+
+div:has(footer) {
+    font-weight: bold;
+    margin-top: auto;
+}
+
+header > nav > ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222222;
+}
+
+header nav ul li {
+    float: left;
+    margin: 0;
+}
+
+header nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+header nav ul li a:hover:not(.active) {
+    background-color: #3f3f3f;
+}
+
+header nav ul li a.active {
+    background-color: #004ECC;
+}
+
+header nav ul li.right {
+    float: right;
+}
+
+main p {
+    font-size: 1.25em;
+    margin: 0.5em 0 0 1.5em;
+}
+
+main h3 + ul, main h2 + ul {
+    margin-left: 3em;
+}
+
+.lsNone {
+    list-style: none;
+}
+
+li.liFirst {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+table ul {
+    list-style-type: "\2013";
+}
+
+table li {
+    padding-left: 0.5em;
+    margin-left: 0.5em;
+}
+
+td {
+    padding: 0.5em 0 0 3em;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+li {
+    margin-top: 0.25em;
+}
+
+.mail, .phoneNumber, .address {
+    text-decoration: none;
+    color: black;
+}
+
+address {
+    margin-left: 2em;
+}
+
+address a {
+    display: inline-block;
+    margin-top: 0.5em;
+}
+
+footer {
+    margin-top: 1em;
+}
