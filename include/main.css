@@ -59,6 +59,7 @@ header > nav > ul {
 
 header nav ul li {
     float: left;
+    margin: 0;
 }
 
 header nav ul li a {
@@ -133,4 +134,8 @@ address {
 address a {
     display: inline-block;
     margin-top: 0.5em;
+}
+
+footer {
+    margin-top: 1em;
 }

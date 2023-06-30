@@ -1,4 +1,3 @@
-
 function includeHTML() {
     var z, i, elmnt, file, xhttp;
     /*loop through a collection of all HTML elements:*/
@@ -44,12 +43,6 @@ window.onload = function () {
     const allowedArray = ['projects', 'about', 'contact'];
     const nameArray = last.split('.');
     let name = nameArray[0];
-
-
-    console.log('nav' + name.charAt(0).toUpperCase() + name.slice(1));
-    console.log(document.getElementById('nav' + name.charAt(0).toUpperCase() + name.slice(1)));
-
-
 
     if (allowedArray.includes(name)) {
         let nav = document.getElementById('nav' + name.charAt(0).toUpperCase() + name.slice(1));
