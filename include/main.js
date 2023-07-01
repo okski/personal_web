@@ -18,14 +18,12 @@ function includeHTML() {
                 includeHTML();
             }
         }      
-        xhttp.open("GET", file, true);
+        xhttp.open("GET", file, false);
         xhttp.send();
         /*exit the function:*/
         return;
         }
     }
-
-    headerHighlight();
 };
 
 function headerHighlight() {
@@ -53,5 +51,6 @@ function headerHighlight() {
 
 
 window.onload = function () {
-    includeHTML();    
+    includeHTML();
+    headerHighlight();
 }
