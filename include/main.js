@@ -44,6 +44,9 @@ function headerHighlight() {
 
     if (allowedArray.includes(name)) {
         let nav = document.getElementById('nav' + name.charAt(0).toUpperCase() + name.slice(1));
+        if (nav == null) {
+            return;
+        }
         nav.classList.add('active');
     }
 }
