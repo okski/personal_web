@@ -31,6 +31,8 @@ function includeHTML() {
 
 
 window.onload = function () {
+    includeHTML();
+    
     let path = window.location.pathname;
     const pathArray = path.split('/');
     let last = pathArray[pathArray.length - 1];
