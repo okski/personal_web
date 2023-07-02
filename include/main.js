@@ -11,17 +11,14 @@ function includeHTML() {
         xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4) {
-            if (this.status == 200) {
-                //const doc = new DOMParser().parseFromString(this.responseText, "text/xml");
-                //elmnt.parentNode.insertBefore(doc.firstChild, elmnt);}
-                elmnt.innerHTML = this.responseText;}
-            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-            /*remove the attribute, and call this function once more:*/
-            elmnt.removeAttribute("w3-include-html");
-            includeHTML();
+                if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                /*remove the attribute, and call this function once more:*/
+                elmnt.removeAttribute("w3-include-html");
+                includeHTML();
             }
         }      
-        xhttp.open("GET", file, true);
+        xhttp.open("GET", file, false);
         xhttp.send();
         /*exit the function:*/
         return;
@@ -29,8 +26,7 @@ function includeHTML() {
     }
 };
 
-
-window.onload = function () {
+function headerHighlight() {
     let path = window.location.pathname;
     const pathArray = path.split('/');
     let last = pathArray[pathArray.length - 1];
@@ -46,6 +42,15 @@ window.onload = function () {
 
     if (allowedArray.includes(name)) {
         let nav = document.getElementById('nav' + name.charAt(0).toUpperCase() + name.slice(1));
+        if (nav == null) {
+            return;
+        }
         nav.classList.add('active');
     }
+}
+
+
+window.onload = function () {
+    includeHTML();
+    headerHighlight();
 }
