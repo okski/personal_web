@@ -31,7 +31,7 @@ header{
 }
 
 main {
-    padding-bottom: calc(2.5em + 5vh);
+    padding-bottom: calc(2.5em + 2.5vh);
 }
 
 h1 {
