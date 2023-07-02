@@ -23,7 +23,7 @@ body{
     flex-direction: column;
 }
 
-header {
+header{
     background-color: black;
 }
 
@@ -137,5 +137,8 @@ address a {
 }
 
 footer {
-    margin-top: 1em;
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #222222;
+    color: white;
 }
