@@ -8,7 +8,7 @@ RewriteRule ^/personal_web/contact$ /personal_web/contact.html
 
 # Local dev
 RewriteRule ^/$ index.html
-RewriteRule ^/projects$ /projects.html
+RewriteRule ^projects$ /projects.html
 RewriteRule ^about$ /about.html
 RewriteRule ^contact$ /contact.html
 
