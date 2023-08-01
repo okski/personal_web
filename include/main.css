@@ -151,3 +151,7 @@ address a {
 footer {
     padding: calc(2.5em*0.25);
 }
+
+.addresses {
+    display: inline-table;
+}
