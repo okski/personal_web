@@ -54,6 +54,20 @@ window.onload = function () {
     includeHTML();
     headerHighlight();
 
+    if (document.getElementById('age')) {
+        const birthdate = new Date(1998, 11, 29); // 29th Feb 2000
+        const today = new Date();     // 28th Feb 2001
+        const year_difference = today.getFullYear() - birthdate.getFullYear();  // 2001 - 2000 = 1
+        const one_or_zero = ((today.getMonth() + 1) < birthdate.getMonth()) ||
+                        ((today.getMonth() + 1) === birthdate.getMonth() && today.getDate() < birthdate.getDate()) ? 1 : 0;
+        const age = year_difference - one_or_zero;
+        
+        const ageSpan = document.getElementById('age');
+
+        ageSpan.innerHTML = age;
+    }
+
     let copyrightYear = new Date().getFullYear();
     document.getElementById('copyrightYear').innerHTML = copyrightYear;
 }
+
